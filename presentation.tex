@@ -1,0 +1,77 @@
+% -----------------------------------------------------------------------------%
+% Template originalmente desenvolvido por Jorge Luiz Ferreira da Silva Junior
+% Contato: jorgeluizjk@gmail.com
+% Repositório original: https://github.com/Collumbus/Template_Slides_LaTex
+% -----------------------------------------------------------------------------%
+% Modificado por Ithallo J. A. Guimarães em Agosto/2020
+% Contato: ithallojunior@outlook.com
+% -----------------------------------------------------------------------------%
+
+%Livro tutorial: http://www.telecom.uff.br/pet/petws/downloads/tutoriais/beamer/tut_beamer_2k100205.pdf
+%Site tutorial: https://userpages.umbc.edu/~rostamia/beamer/
+
+\input{setup/pacotes}
+\input{setup/parametrosDeLayout}
+\input{setup/novosComandos}
+\input{editaveis/informacoes}
+
+\def \L {2.}
+
+\begin{document}
+    
+    %--------------------------------------------------------------------------
+    % CAPA
+    \begin{frame}
+        %Cabeçalho
+        \frametitle{\tiny  \textbf{
+            Universidade de Brasília – UnB\\Faculdade UnB Gama – FGA\\
+            \vspace{0.8mm} Mestrado em Engenharia Biomédica\\ \qquad
+            }}
+        \titlepage
+        
+        %Autor / Orientador
+        \begin{textblock*}{100mm}(.35\textwidth,-2.5cm)
+            \begin{flushright}
+                \footnotesize
+                Autor: \imprimirAutor\\
+                Orientador: \imprimirOrientador\\
+                Coorientador: \imprimirCoorientador
+            \end{flushright}
+        \end{textblock*}
+
+        %Data
+        \begin{textblock*}{50mm}(.3\textwidth,-0.5cm)
+            \begin{center}
+                \footnotesize
+                \imprimirLocal, \imprimirData\\
+                \imprimirInstituicao
+            \end{center}
+        \end{textblock*}
+
+    \end{frame}
+    
+    \begin{frame}
+        \frametitle{Sumário}
+        \tableofcontents%[pausesections]
+    \end{frame}
+
+    %-------------------------------------------------------------------------
+    % SLIDES
+    \input{editaveis/slides}
+
+    %-------------------------------------------------------------------------
+    %SEÇÃO  DE REFERÊNCIAS
+    \section{Referências bibliográficas}
+    \begin{frame}
+        %[allowframebreaks]
+        \frametitle{Referências bibliográficas}
+        \tiny
+        \bibliography{referencias}
+    \end{frame}
+
+    %-------------------------------------------------------------------------
+    % AGRADECIMENTOS
+    \input{editaveis/agradecimentos}
+
+    %-------------------------------------------------------------------------
+    \end{document}

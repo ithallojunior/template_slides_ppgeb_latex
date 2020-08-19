@@ -1,38 +1,32 @@
 %Define local da pasta de figuras.  
-\graphicspath{{./figuras/}} 		
+\graphicspath{{./figuras/}}
 
 %Numeração de slides e footnotes
 %Opção 1
-\usepackage{beamer/themes/outer/beamerouterthemeumbcfootline}
+\usepackage{setup/beamer/themes/outer/beamerouterthemeumbcfootline}
 %Opção 2
 %\useoutertheme{infolines}
 
 %Insere um plano de fundo: Barra verde
 \setbeamertemplate{background canvas}{\includegraphics
-	[width=\paperwidth,height=\paperheight]{bkg.jpg}}
+	[width=\paperwidth,height=\paperheight]{setup/images/background}}
 
 %Insere as Logos
 
-%Logo superior esquerda 1
+%Logo superior esquerda
 \addtobeamertemplate{headline}{}{%
-	\begin{textblock*}{100mm}(.030\textwidth,0.2cm)
-		\includegraphics[width=1cm]{logo2} 
+	\begin{textblock*}{100mm}(.001\textwidth,0.02cm)
+		\includegraphics[width=1.3cm]{setup/images/left_logo} 
 \end{textblock*}}
 
-%Logo superior esquerda 2
+%Logo superior direita
 \addtobeamertemplate{headline}{}{%
-	\begin{textblock*}{100mm}(.915\textwidth,0.1cm)
-		\includegraphics[width=1.0cm]{logo3} 
-\end{textblock*}}
-
-%Logo superior direita 1
-\addtobeamertemplate{headline}{}{%
-	\begin{textblock*}{100mm}(.110\textwidth,0.17cm)
-		\includegraphics[width=1cm]{logo4}
+	\begin{textblock*}{100mm}(.810\textwidth,0.02cm)
+		\includegraphics[width=3.cm]{setup/images/right_logo} 
 \end{textblock*}}
 
 
-%Defini uma cor personalizada
+%Define uma cor personalizada
 \definecolor{mygreen}{rgb}{.125,.5,.25}
 %\usecolortheme[named=mygreen]{structure}
 
@@ -43,6 +37,9 @@
 
 %Centraliza o título dos slides
 \setbeamertemplate{frametitle}[default][center]
+
+%Enumera figuras e tabelas
+\setbeamertemplate{caption}[numbered]
 
 
 %Reservados para o sistema - Não alterar
