@@ -1,0 +1,43 @@
+#linux backup files
+*~
+*.swp
+*.dvi
+*.ps
+*.backup
+*.aux
+
+#logs
+*.log
+
+#PDFs
+*.pdf
+!presentation.pdf
+
+
+
+#other LaTeX generated files
+*.lof
+*.lot
+*.bbl
+*.blg
+*.brf
+*.toc
+*.idx
+*.fls
+*.fdb_latexmk
+*.ilg
+*.ind
+
+#beamer and LaTeX files
+*.nav
+*.out
+*.snm
+
+#OS X
+.DS_Store
+
+#.fuse
+.fuse_hidden*
+
+#vscode
+**/.vscode
