@@ -1,8 +1,8 @@
 all:
-	pdflatex presentation
-	bibtex presentation
-	pdflatex presentation
-	pdflatex presentation
+	pdflatex apresentação
+	bibtex apresentação
+	pdflatex apresentação
+	pdflatex apresentação
 
 
 .PHONY: clean
