@@ -46,6 +46,7 @@
 
             \item OBJETIVO ESPECÍFICO 1
             \item OBJETIVO ESPECÍFICO 2
+            \item OBJETIVO ESPECÍFICO 3
 
         \end{itemize}
         
@@ -60,9 +61,31 @@
 \begin{frame}
     \frametitle{Fundamentação Teórica}
     \framesubtitle{Tópico 1}
-    \center
+    
+    De acordo com \citeonline{book}, (...) a Tabela \ref{table:1} 
+    mostra...
+    
+    \begin{table}[h!]
+        \centering
+        \caption{Tabela.}
+        \label{table:1}
+        
+            \begin{tabular}[]{cc}
+                
+                \hline
+                Descrição 1 &  Descrição 2 \\
+                \hline
+                \hline
+                Valor 1 $\pm$ desvio-padrão & $ 1000 \pm 2 $ \\
+                Valor 2 $\pm$ desvio-padrão & $ 10000 \pm 20 $\\
+                Valor 3 $\pm$ desvio-padrão & $ 100 \pm 0,2 $ \\ [1ex]
+                \hline
+            
+            \end{tabular}
+    
+    \end{table}
+    
 
-    FUNDAMENTAÇÃO TEÓRICA 
 
 \end{frame}
 
@@ -74,10 +97,17 @@
 \begin{frame}
     \frametitle{Metodologia}
     \framesubtitle{Tópico 1}
+    
+    A Figura \ref{fig:1} mostra...
 
-    \center
-
-    METODOLOGIA
+    \begin{figure}
+        
+        \centering
+        \includegraphics[width=0.2\linewidth]{example_image}
+        \caption{Figura \cite{article}.}
+        \label{fig:1}
+        
+     \end{figure}
 
 \end{frame}
 
@@ -89,9 +119,36 @@
 \begin{frame}
     \frametitle{Resultados}
     \framesubtitle{Tópico 1}
-    \center
-
-    RESULTADOS
+    
+    \begin{columns}
+        
+        \begin{column}{0.5\textwidth}
+            
+            \begin{itemize}
+                
+                \item RESULTADO 1 (Figura \ref{fig:2});
+                \item RESULTADO 2;
+                \item RESULTADO 3;
+                \item RESULTADO 4.
+                
+            \end{itemize}
+        
+        \end{column}
+        
+        \begin{column}{0.5\textwidth}
+            
+            \begin{figure}
+        
+                \centering
+                \includegraphics[width=0.5\linewidth]{example_image}
+                \caption{Outra figura.}
+                \label{fig:2}
+        
+            \end{figure}
+        
+        \end{column}
+    
+    \end{columns}
     
 \end{frame}
 
