@@ -6,6 +6,6 @@ para apresentações do PPGEB - UnB (Programa de Pós-Graduação em Engenharia 
 O _template_ inclui exemplos de figuras, tabelas e citações.
 
 
-O original pode ser encontrado [aqui](https://github.com/ithallojunior/Template_Slides_LaTex).
+O original pode ser encontrado [aqui](https://github.com/Collumbus/Template_Slides_LaTex).
 
 # ![logo](example.png)
